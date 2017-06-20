@@ -289,3 +289,23 @@ h6{
 #stackoverflow-off:hover {
 	content:url('../images/overflow-64_on.png');
 }
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #CCCCCC;
+  padding-left: .5em;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #CCCCCC;
+  padding-left: .5em;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #CCCCCC;
+  padding-left: .5em;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #CCCCCC;
+  padding-left: .5em;
+}
+
+
