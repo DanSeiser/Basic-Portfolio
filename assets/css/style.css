@@ -10,7 +10,8 @@ header {
     top: 0;
     height: 6em;
     width: 100%;
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    min-width: 650px;
 }
 
 body{
@@ -81,31 +82,33 @@ h6{
 .myname {
 	color: #ffffff;
 }
-.navitem{
+.navitem {
 	float: left;
 	font-size: larger;
 }
 
-.navitem:hover { text-decoration: underline;}
+.navitem:hover {
+	text-decoration: underline;
+}
 
-.navleft a{
+.navleft a {
 	border-right: 1px solid #CCCCCC;
 	padding-right: 1em;
 }
-.navright a{
+.navright a {
 	border-left: 1px solid #CCCCCC;
 	padding-left: 1em;
 }
-.navmiddle a{
+.navmiddle a {
 	padding-left: 1em;
 	padding-right: 1em;
 }
 
-#copyright{
+#copyright {
 	padding-top: 45px;
 }
 
-#namebox{
+#namebox {
 	text-align: center;
 	position: relative;
 	left: 6em;
@@ -118,7 +121,7 @@ h6{
 	float: left;
 }
 
-#nav{
+#nav {
 	text-align: center;
 	position: absolute;
 	right: 3em;
@@ -129,14 +132,14 @@ h6{
 	float: left;
 }
 
-#sidebar{
+#sidebar {
 	width: 270px;
 	background-color: #FFFFFF;
 }
 
 
 
-#content{
+#content {
 	width: 960px;
 	position: relative;
 	margin: 0 auto;
@@ -144,47 +147,47 @@ h6{
 	clear: top;
 }
 
-#main{
+#main {
 	width: 650px;
 	background-color: #FFFFFF;
 	float: left;
 	border: 1px solid #dddddd;
 }
 
-#sidebar{
+#sidebar {
 	width: 270px;
 	background-color: #FFFFFF;
 	float: right;
 }
 
-.maincontent{
+.maincontent {
 	padding: 2em;
 	
 	
 }
-.sidebarcontent{
+.sidebarcontent {
 	padding: 2em;
 	line-height: 4em;
 	border: 1px solid #dddddd;
 	
 }
-.mainheader{
+.mainheader {
 	border-bottom: 3px solid #CCCCCC;
 	line-height: 4em;
 }
-.sidebarheader{
+.sidebarheader {
 	border-bottom: 1px solid #CCCCCC;
 	text-align: center;
 }
-.maintext{
+.maintext {
 	padding-top: 1em;
 	font-size: larger;
 }
-.sidebartext{
+.sidebartext {
 	padding-top: 1em;
 	text-align: center;
 }
-.imageLink{
+.imageLink {
 	padding: 1em;
 	float: left;
 }
@@ -201,7 +204,7 @@ h6{
 	float: left;
 	padding: 1em;
 }
-.inputlabel{
+.inputlabel {
 	padding-top: 1em;
 	margin-bottom: -.7em;
 }
@@ -212,20 +215,30 @@ h6{
 .contacttextarea {
 	height: 10em;
 }
-.portfolio{
 
-}
-.pf-row{
-	
-}
-
-.leftimg{
+.leftimg-container {
 	float:left;
 	
 }
-.rightimg{
+
+.rightimg-container {
 	float:right;
-	
+}
+
+.rightimg:hover + .pf-label {
+	opacity: 1;
+}
+
+.leftimg:hover + .pf-label {
+	opacity: 1;
+}
+
+.leftimg, .rightimg, .pf-label{
+	cursor: pointer;
+}
+
+.pf-label:hover{
+	opacity: 1;
 }
 
 .pf-label {
@@ -238,6 +251,7 @@ h6{
 	color: #FFFFFF;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size: larger;
+	opacity: 0.7;
 }
 
 .button {
@@ -246,4 +260,32 @@ h6{
 	padding: .5em 1.5em .5em 1.5em;
 	color: #FFFFFF;
 	font-size: larger;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #429b97;
+	border: 1px solid #AAAAAA;
+}
+
+#stackoverflow-on{
+	display: none;
+}
+
+#linkedin-on{
+	display: none;
+}
+
+#github-on{
+	display: none;
+}
+
+#github-off:hover {
+	content:url('../images/github-64_on.png');
+}
+#linkedin-off:hover {
+	content:url('../images/linkedin-64_on.png');
+}
+#stackoverflow-off:hover {
+	content:url('../images/overflow-64_on.png');
 }
